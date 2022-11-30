@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+class TopPage extends StatefulWidget {
+  const TopPage({super.key, required this.title});
 
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<TopPage> createState() => _TopPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _TopPageState extends State<TopPage> {
   int _counter = 0;
 
   void _incrementCounter() {
@@ -22,7 +22,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: const Text("Flutter × Firebase"),
       ),
       body: Center(
         child: Column(
@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
-      ), 
+      ),
     );
   }
 }
